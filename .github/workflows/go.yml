@@ -22,4 +22,4 @@ jobs:
         go-version: 1.18
 
     - name: Build
-      run: echo Hello World
+      run: go build main.go
