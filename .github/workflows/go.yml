@@ -4,11 +4,15 @@
 name: Go
 
 on:
-  push: 
+  push:
     branches: [main]
+    paths: 
+      - '**.go'
   pull_request:
+    paths: 
+      - '**.go'
     type: [opened, synchronize, ready_for_review]
-
+  
 jobs:
 
   build:
